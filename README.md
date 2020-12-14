@@ -1,4 +1,4 @@
-## Compilar la librería climateDataReaderStatic
+## Compilar la biblioteca climateDataReaderStatic
 
 Generar el archivo .class
 
