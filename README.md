@@ -56,13 +56,13 @@ cd ../..
 javac -cp json-simple-1.1.jar:climateDataReader/dist/climateDataReader.jar:climateDataReaderStatic.jar:HTTPServer/src HTTPServer/src/httpserver/HttpServer.java
 ```
 
-## Ejecutar el Server con climateDataREaderStatic.jar
+## Ejecutar el Server con climateDataReaderStatic.jar
 
 ```bash
 java -cp json-simple-1.1.jar:climateDataReader/dist/climateDataReader.jar:climateDataReaderStatic.jar:HTTPServer/src/  httpserver/HttpServer 8081
 ```
 
-## Ejecutar el Server con climateDataREaderSMN.jar
+## Ejecutar el Server con climateDataReaderSMN.jar
 
 ```bash
 java -cp json-simple-1.1.jar:climateDataReader/dist/climateDataReader.jar:climateDataReaderSMN.jar:HTTPServer/src/  httpserver/HttpServer 8081
