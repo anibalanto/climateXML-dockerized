@@ -3,7 +3,7 @@
 Generar el archivo .class
 
 ```bash
-javac -cp json-simple-1.1.jar:climateDataReader/dist/climateDataReader.jar:climateDataReaderStatic/src/  climateDataReaderStatic/src/climatedatareader/ClimateDataReaderImpl.java
+javac -cp json-simple-1.1.jar:climateDataReader.jar:climateDataReaderStatic/src/  climateDataReaderStatic/src/climatedatareader/ClimateDataReaderImpl.java
 ```
 
 Nos paramos en la carpeta del código de la biblioteca
