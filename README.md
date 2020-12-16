@@ -1,7 +1,9 @@
-Compilar la librería climateDataReaderStatic generando el archivo .class
+## Compilar la biblioteca climateDataReaderStatic
+
+Generar el archivo .class
 
 ```bash
-javac -cp json-simple-1.1.jar:climateDataReader/dist/climateDataReader.jar:climateDataReaderStatic/src/  climateDataReaderStatic/src/climatedatareader/ClimateDataReaderImpl.java
+javac -cp json-simple-1.1.jar:climateDataReader.jar:climateDataReaderStatic/src/  climateDataReaderStatic/src/climatedatareader/ClimateDataReaderImpl.java
 ```
 
 Nos paramos en la carpeta del código de la biblioteca
@@ -15,9 +17,16 @@ A partir del archivo .class generamos la librería climateDataREaderStatic.jar
 ```bash
 jar cvfe ../../climateDataReaderStatic.jar climatedatareader/ClimateDataReaderImpl.class climatedatareader/*.class
 ```
--------
 
-Compilar la biblioteca climateDataReaderSMN generando el archivo .class
+Se vuelve a la carpeta principal del proyecto
+
+```bash
+cd ../..
+```
+
+## Compilar la biblioteca climateDataReaderSMN
+
+Generar el archivo .class
 
 ```bash
 javac -cp json-simple-1.1.jar:climateDataReader/dist/climateDataReader.jar:climateDataReaderSMN/src/  climateDataReaderSMN/src/climatedatareader/ClimateDataReaderImpl.java
@@ -34,26 +43,28 @@ A partir del archivo .class generamos la librería climateDataREaderSMN.jar
 ```bash
 jar cvfe ../../climateDataReaderSMN.jar climatedatareader/ClimateDataReaderImpl.class climatedatareader/*.class
 ```
--------
 
-Compilamos el servidor
+Se vuelve a la carpeta principal del proyecto
+
+```bash
+cd ../..
+```
+
+## Compilamos el servidor
 
 ```bash
 javac -cp json-simple-1.1.jar:climateDataReader/dist/climateDataReader.jar:climateDataReaderStatic.jar:HTTPServer/src HTTPServer/src/httpserver/HttpServer.java
 ```
 
--------
-ejecutar HTTPServer con el jar climateDataREaderStatic.jar
+## Ejecutar el Server con climateDataReaderStatic.jar
 
 ```bash
-java -cp json-simple-1.1.jar:climateDataReader/dist/climateDataReader.jar:climateDataReaderStatic.jar:HTTPServer/src/  httpserver/HttpServer 8081
+java -cp json-simple-1.1.jar:climateDataReader.jar:climateDataReaderStatic.jar:HTTPServer/src/  httpserver/HttpServer 8081
 ```
 
--------
-
-ejecutar HTTPServer con el jar climateDataREaderSMN.jar
+## Ejecutar el Server con climateDataReaderSMN.jar
 
 ```bash
-java -cp json-simple-1.1.jar:climateDataReader/dist/climateDataReader.jar:climateDataReaderSMN.jar:HTTPServer/src/  httpserver/HttpServer 8081
+java -cp json-simple-1.1.jar:climateDataReader.jar:climateDataReaderSMN.jar:HTTPServer/src/  httpserver/HttpServer 8081
 ```
 
