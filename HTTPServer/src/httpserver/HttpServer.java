@@ -92,7 +92,7 @@ public class HttpServer {
         String getProvincias() throws Exception {
             JSONArray array;
 
-            java.util.Vector<String> provincias = new java.util.Vector();
+            java.util.Vector<String> provincias = new java.util.Vector<String>();
 
             if ((array = reader.readJsonClimate()) != null) {
 
