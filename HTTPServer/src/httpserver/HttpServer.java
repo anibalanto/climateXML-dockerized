@@ -64,7 +64,7 @@ public class HttpServer {
             xml.append("<localidades>");
             if ((array = reader.readJsonClimate()) != null) {
 
-                System.out.println( array.toJSONString() );
+                //System.out.println( array.toJSONString() );
                 for (int i = 0; i < array.size(); i++) {
 
                     JSONObject o = (JSONObject) array.get(i);
